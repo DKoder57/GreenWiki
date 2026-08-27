@@ -128,6 +128,20 @@ Evita que o site fique refém de uma API gratuita mudar de política, preço ou 
 
 ---
 
+### Data: 2026-08-27
+
+**Decisão:**
+Usar Node.js 24 (`node-version: '24'`) nos workflows de CI/CD (`typescript-check.yml`, `eslint.yml`, `security-audit.yml`).
+
+**Motivo:**
+Node 24 ("Krypton") está em Active LTS desde outubro de 2025. Node 22 ("Jod") já passou para Maintenance LTS no mesmo mês — ainda suportado (até abril de 2027), mas não é mais a versão recomendada para novos projetos.
+
+**Alternativas consideradas:**
+- Node 22 — cogitado primeiro por engano, corrigido após checar o calendário oficial de LTS do Node.js
+- Node 20 (valor genérico do template) — já em Maintenance LTS, EOL previsto para abril de 2026
+
+---
+
 <!-- Copie o bloco acima para cada nova decisão -->
 
 ## Pendências (ainda não fechadas)
