@@ -43,7 +43,7 @@ Uma espécie pode "subir" da Camada B pra Camada A a qualquer momento, sem mudar
 | Imagens | Cloudflare R2 (10 GB grátis) | Mantém o Pages abaixo do limite de 20.000 arquivos; só Camada A recebe imagem tratada |
 | API pro GreenKeeper | JSON estático gerado no build | App consome via fetch, sem servidor ao vivo, cacheável por CDN |
 | Comentários | Giscus (GitHub Discussions) | Zero servidor pra manter, zero custo, infraestrutura do GitHub |
-| CI/CD | GitHub Actions (herdado do template) | TypeScript check, ESLint, security audit, Dependabot |
+| CI/CD | GitHub Actions (herdado do template), Node 24 | TypeScript check, ESLint, security audit, Dependabot — Node 24 por ser a Active LTS em 2026 (Node 22 já está em Maintenance LTS desde out/2025) |
 
 **Alternativa considerada e descartada:** MediaWiki (motor de wiki tradicional, usado por projetos como Wikispecies/Practical Plants). Exige servidor + banco rodando 24/7, o que conflita com o requisito de custo zero permanente. A abordagem estática + serverless cobre o mesmo caso de uso sem esse custo fixo.
 
